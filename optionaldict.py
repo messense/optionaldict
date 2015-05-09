@@ -3,7 +3,8 @@ from __future__ import absolute_import, unicode_literals
 import sys
 
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
+__author__ = 'messense'
 __all__ = ['optionaldict', 'OptionalDict']
 
 PY3 = sys.version_info[0] == 3
@@ -32,7 +33,7 @@ class OptionalDict(dict):
     def setdefault(self, k, d=None, dict_setdefault=dict.setdefault):
         if d is None:
             return
-        dict_setdefault(self, k, d)
+        return dict_setdefault(self, k, d)
 
 
 optionaldict = OptionalDict

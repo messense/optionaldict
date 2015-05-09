@@ -11,7 +11,7 @@ with open(readme) as f:
 
 setup(
     name='optionaldict',
-    version='0.1.0',
+    version='0.1.1',
     author='messense',
     author_email='messense@icloud.com',
     url='https://github.com/messense/optionaldict',

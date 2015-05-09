@@ -38,8 +38,10 @@ class optionaldictTestCase(unittest.TestCase):
 
     def test_setdefault_with_none(self):
         d = optionaldict()
-        d.setdefault('a', 1)
-        d.setdefault('b', None)
+        a = d.setdefault('a', 1)
+        b = d.setdefault('b', None)
+        self.assertEqual(1, a)
+        self.assertTrue(b is None)
         self.assertEqual(1, d['a'])
         self.assertTrue('b' not in d)
 
