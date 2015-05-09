@@ -25,7 +25,7 @@ or if you prefer the CamelCasing style naming, you can import it by:
 from optionaldict import OptionalDict
 ```
 
->>> Tips: Infact, ``optionaldict`` is just an alias for ``OptionalDict``.
+> Tips: Infact, ``optionaldict`` is just an alias for ``OptionalDict``.
 
 Then you can use it just like the built-in ``dict``:
 
