@@ -13,12 +13,21 @@ pip install optionaldict
 ```
 
 # Usage
-``optionaldict``'s usage is very simple, you will import it:
+``optionaldict``'s usage is very simple, you will import it by:
+
 ```python
 from optionaldict import optionaldict
 ```
 
-then use it just like the built-in ``dict``:
+or if you prefer the CamelCasing style naming, you can import it by:
+
+```python
+from optionaldict import OptionalDict
+```
+
+>>> Tips: Infact, ``optionaldict`` is just an alias for ``OptionalDict``.
+
+Then you can use it just like the built-in ``dict``:
 
 ```python
 d1 = optionaldict(a=1, b=None)
@@ -28,4 +37,9 @@ d1.setdefault('d', None)
 d2 = optionaldict()
 d2['a'] = 1
 d2['b'] = None
+
+d3 = optionaldict({
+    'a': 1,
+    'b': None
+})
 ```
