@@ -19,9 +19,14 @@ lib64/
 parts/
 sdist/
 var/
+bin/
+local/
+include/
+man/
 *.egg-info/
 .installed.cfg
 *.egg
+.ropeproject/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
