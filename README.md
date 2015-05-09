@@ -1,5 +1,7 @@
 # optionaldict
 ``optionaldict`` is a dict-like object that ignore NoneType values for Python which is pickable and JSON serializable.
+[![Build Status](https://travis-ci.org/messense/optionaldict.svg)](https://travis-ci.org/messense/optionaldict)
+[![Coverage Status](https://coveralls.io/repos/messense/optionaldict/badge.svg)](https://coveralls.io/r/messense/optionaldict)
 
 # Installation
 
