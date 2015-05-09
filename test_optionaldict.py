@@ -18,7 +18,7 @@ class optionaldictTestCase(unittest.TestCase):
             b=None
         )
         self.assertEqual(1, d['a'])
-        self.assertNotIn('b', d)
+        self.assertTrue('b' not in d)
 
     def test_init_with_dict_contains_none(self):
         d1 = {
@@ -27,21 +27,21 @@ class optionaldictTestCase(unittest.TestCase):
         }
         d = optionaldict(d1)
         self.assertEqual(1, d['a'])
-        self.assertNotIn('b', d)
+        self.assertTrue('b' not in d)
 
     def test_setitem_with_none(self):
         d = optionaldict()
         d['a'] = 1
         d['b'] = None
         self.assertEqual(1, d['a'])
-        self.assertNotIn('b', d)
+        self.assertTrue('b' not in d)
 
     def test_setdefault_with_none(self):
         d = optionaldict()
         d.setdefault('a', 1)
         d.setdefault('b', None)
         self.assertEqual(1, d['a'])
-        self.assertNotIn('b', d)
+        self.assertTrue('b' not in d)
 
     def test_json_dumps(self):
         d = optionaldict(
