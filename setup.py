@@ -18,6 +18,7 @@ setup(
     keywords='dict, optional value',
     description='A dict-like object that ignore NoneType values for Python',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     packages=['optionaldict'],
     package_data={'optionaldict': ['py.typed', '*.pyi']},
     include_package_data=True,
