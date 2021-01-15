@@ -18,6 +18,7 @@ else:
 
 class OptionalDict(dict):
     """A dictionary only store non none values"""
+
     def __init__(self, *args, **kwargs):
         self.update(*args, **kwargs)
 
