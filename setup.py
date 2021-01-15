@@ -11,7 +11,7 @@ with open(readme) as f:
 
 setup(
     name='optionaldict',
-    version='0.1.1',
+    version='0.1.2',
     author='messense',
     author_email='messense@icloud.com',
     url='https://github.com/messense/optionaldict',
@@ -35,6 +35,11 @@ setup(
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Intended Audience :: Developers',
